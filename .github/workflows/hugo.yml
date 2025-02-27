@@ -59,7 +59,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-
+- name: Configure GitHub Pages
+  uses: actions/configure-pages@v5
+  with:
+    enablement: true
   # Deployment job
   deploy:
     environment:
